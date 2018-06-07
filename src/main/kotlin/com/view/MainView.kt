@@ -2,6 +2,7 @@ package com.view
 
 import com.app.Styles
 import com.control.MainController
+import com.model.PerformanceAs
 import com.model.Sight
 import com.model.SightItemViewModel
 import com.model.SightScope
@@ -14,30 +15,28 @@ class MainView : View("Hello TornadoFX") {
     val controller: MainController by inject()
 
 
-    /*override val root = tableview(controller.sightList) {
-        column("Sight nº", SightItemViewModel::sightNumberProperty)
-        column("PerformanceAs", SightItemViewModel::performanceAsProperty)
-        column("nnView", SightItemViewModel::nnViewOneProperty)
-        column("nnViewTwo", SightItemViewModel::nnViewTwoProperty)
-        column("theory", SightItemViewModel::theoryProperty)
+    override val root = anchorpane {
 
-    }*/
+        scrollpane {
 
-    override val root = scrollpane {
+            setPrefSize(1000.0, 600.0)
 
-        runAsync {
-            return@runAsync controller.sightList
-        } ui {
+            runAsync {
+                return@runAsync controller.sightList
+            } ui {
 
-            vbox {
+                vbox(5) {
 
-                children.bind(it) {
+                    children.bind(it) {
 
-                    val editScope = SightScope()
-                    editScope.model.item = it
-                    val node = find(SightListFragment::class, editScope)
-                    anchorpane {
-                        this += node.root
+                        val editScope = SightScope()
+                        editScope.model.item = it
+                        val node = find(SightListFragment::class, editScope)
+                        anchorpane {
+                            this += node.root
+                            padding = Insets(5.0, 5.0, 5.0, 5.0)
+                        }
+
                     }
 
                 }
@@ -45,31 +44,14 @@ class MainView : View("Hello TornadoFX") {
             }
 
         }
-    }
 
-    }
-
-/*    override val root = listview(controller.sightList) {
-        selectionModel.selectionMode = SelectionMode.SINGLE
-
-        this.items.forEach {
-
-            val editScope = SightScope()
-            editScope.model.item = it
-
-
-            cellFormat {
-                graphic = cache {
-                    find(SightListFragment::class, editScope).root
-                }
+        button("add") {
+            action {
+                controller.addPerformanceAs(0, "Neww")
             }
-
         }
-
-        //cellFragment(SightListFragment::class)
-
     }
-}*/
+}
 
 class SightListFragment : Fragment() {
     val controller: MainController by inject()
@@ -83,29 +65,36 @@ class SightListFragment : Fragment() {
             return@runAsync scope.model
         } ui { model ->
 
-            println(model.sightNumber)
+            println(model.sightNumber.value)
+            val sightIndex: Int = model.sightNumber.value as Int
 
             // Performance As...
             anchorpane {
                 vbox(5) {
 
-                    children.bind(model.performanceAs.value) { i ->
+                    runAsync {
+                        return@runAsync model.performanceAs
+                    } ui {
 
-                        textfield(i.textProperty) {
-                            setOnKeyPressed {
-                                //commitEdit(item)
-                                commitValue()
-                                model.performanceAs.value.forEach {
-                                    println(it.text)
+                        children.bind(it.value) { i ->
+
+                            textfield(i.textProperty) {
+                                setOnKeyPressed {
+                                    //commitEdit(item)
+                                    commitValue()
+                                    model.performanceAs.value.forEach {
+                                        println(it.text)
+                                    }
                                 }
+
+                                prefWidth = 250.0
+                                addClass(Styles.performanceAs)
+
                             }
-
-                            prefWidth = 250.0
-                            addClass(Styles.performanceAs)
-
                         }
                     }
                 }
+
             }
 
             // NN View One
@@ -166,7 +155,7 @@ class SightListFragment : Fragment() {
 
                         textarea(it.textProperty) {
                             setOnKeyPressed {
-                               // commitEdit(item)
+                                // commitEdit(item)
 
                                 model.theory.value.forEach {
                                     println(it.text)
@@ -191,33 +180,3 @@ class SightListFragment : Fragment() {
     }
 
 }
-
-/*
-class PerformanceAs : Fragment() {
-
-    override val scope = super.scope as TableScope
-    val model = scope.model
-
-
-    override val root = anchorpane {
-        textfield {
-
-            runAsync {
-
-                return@runAsync model.performanceAs
-
-            } ui { loadedText ->
-
-                this@textfield.text = loadedText
-
-                setOnKeyPressed {
-                    model.performanceAsProperty.bindBidirectional(this.textProperty())
-                }
-
-            }
-
-        }
-    }
-
-}
-        */

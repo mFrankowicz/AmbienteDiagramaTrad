@@ -5,8 +5,11 @@ import tornadofx.*
 
 class MainController : Controller() {
 
-    var sightList = mutableListOf<Sight>().observable()
+    val sightList = mutableListOf<Sight>().observable()
 
+    fun addPerformanceAs(index: Int, text: String) {
+        sightList.get(index).performanceAs.add(PerformanceAs(text))
+    }
 
     init {
 
@@ -22,7 +25,6 @@ class MainController : Controller() {
         }
 
     }
-
 
 }
 
