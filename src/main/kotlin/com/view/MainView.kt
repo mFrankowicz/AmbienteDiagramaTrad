@@ -9,17 +9,18 @@ import com.model.SightScope
 import javafx.application.Platform
 import javafx.geometry.Insets
 import javafx.scene.control.SelectionMode
+import javafx.scene.control.ToggleGroup
+import javafx.stage.StageStyle
 import tornadofx.*
 
 class MainView : View("Hello TornadoFX") {
     val controller: MainController by inject()
 
-
     override val root = anchorpane {
 
         scrollpane {
 
-            setPrefSize(1000.0, 600.0)
+            setMinSize(1000.0, 600.0)
 
             runAsync {
                 return@runAsync controller.sightList
@@ -31,9 +32,23 @@ class MainView : View("Hello TornadoFX") {
 
                         val editScope = SightScope()
                         editScope.model.item = it
+                        val index = editScope.model.sightNumber.value.toInt()
                         val node = find(SightListFragment::class, editScope)
                         anchorpane {
                             this += node.root
+                            this += anchorpane {
+
+                                anchorpaneConstraints {
+                                    bottomAnchor = 2
+                                    leftAnchor = 2
+                                }
+
+                                button("add") {
+                                    action {
+                                        find<CreateItemView>(mapOf(CreateItemView::index to index)).openModal(stageStyle = StageStyle.UTILITY)
+                                    }
+                                }
+                            }
                             padding = Insets(5.0, 5.0, 5.0, 5.0)
                         }
 
@@ -44,17 +59,62 @@ class MainView : View("Hello TornadoFX") {
             }
 
         }
-
-        button("add") {
-            action {
-                controller.addPerformanceAs(0, "Neww")
-            }
-        }
     }
 }
 
-class SightListFragment : Fragment() {
+class CreateItemView: View () {
+
     val controller: MainController by inject()
+
+    val index: Int by param()
+
+    //override val scope = super.scope as SightScope
+
+    //private val model = scope.model
+
+    private val toggleGroup = ToggleGroup()
+
+    override val root = anchorpane {
+
+        setPrefSize(400.0, 300.0)
+
+        vbox(10) {
+
+            anchorpaneConstraints {
+                topAnchor = 10
+                leftAnchor = 10
+            }
+
+            button("performance as") {
+                action {
+                    controller.addPerformanceAs(index, "performance as $index new")
+                }
+            }
+            button("nnView 1") {
+                action {
+                    controller.addNNViewOne(index, "nnView1 $index new")
+                }
+            }
+            //button("direction 1")
+            button("nnView 2") {
+                action {
+                    controller.addNNViewTwo(index, "nnView2 $index new")
+                }
+            }
+            //button("direction 2")
+            button("theory") {
+                action {
+                    controller.addTheory(index, "theory $index new")
+                }
+            }
+        }
+
+    }
+
+}
+
+class SightListFragment : Fragment() {
+
     //val model = SightItemViewModel(itemProperty)
 
     override val scope = super.scope as SightScope
@@ -64,8 +124,6 @@ class SightListFragment : Fragment() {
         runAsync {
             return@runAsync scope.model
         } ui { model ->
-
-            println(model.sightNumber.value)
             val sightIndex: Int = model.sightNumber.value as Int
 
             // Performance As...
@@ -101,24 +159,28 @@ class SightListFragment : Fragment() {
             anchorpane {
                 vbox(5) {
 
-                    children.bind(model.nnViewOne.value) { i ->
+                    runAsync {
+                        return@runAsync model.nnViewOne
+                    } ui {
 
-                        textfield(i.textProperty) {
-                            setOnKeyPressed {
-                                //commitEdit(item)
+                        children.bind(it.value) { i ->
 
-                                model.nnViewOne.value.forEach {
-                                    println(it.text)
+                            textfield(i.textProperty) {
+                                setOnKeyPressed {
+                                    //commitEdit(item)
+
+                                    model.nnViewOne.value.forEach {
+                                        println(it.text)
+                                    }
                                 }
+
+                                setPrefSize(200.0, 60.0)
+                                padding = Insets(10.0, 10.0, 10.0, 10.0)
+                                addClass(Styles.nnView)
+
                             }
-
-                            setPrefSize(200.0, 60.0)
-                            padding = Insets(10.0, 10.0, 10.0, 10.0)
-                            addClass(Styles.nnView)
-
                         }
                     }
-
                 }
             }
 
@@ -126,21 +188,26 @@ class SightListFragment : Fragment() {
             anchorpane {
                 vbox(5) {
 
-                    children.bind(model.nnViewTwo.value) { i ->
+                    runAsync {
+                        return@runAsync model.nnViewTwo
+                    } ui {
 
-                        textfield(i.textProperty) {
-                            setOnKeyPressed {
-                                //commitEdit(item)
+                        children.bind(it.value) { i ->
 
-                                model.nnViewTwo.value.forEach {
-                                    println(it.text)
+                            textfield(i.textProperty) {
+                                setOnKeyPressed {
+                                    //commitEdit(item)
+
+                                    model.nnViewTwo.value.forEach {
+                                        println(it.text)
+                                    }
                                 }
+
+                                setPrefSize(200.0, 60.0)
+                                padding = Insets(10.0, 10.0, 10.0, 10.0)
+                                addClass(Styles.nnView)
+
                             }
-
-                            setPrefSize(200.0, 60.0)
-                            padding = Insets(10.0, 10.0, 10.0, 10.0)
-                            addClass(Styles.nnView)
-
                         }
                     }
 
@@ -151,24 +218,29 @@ class SightListFragment : Fragment() {
             anchorpane {
                 vbox(5) {
 
-                    children.bind(model.theory.value) {
+                    runAsync {
+                        return@runAsync model.theory
+                    } ui {
 
-                        textarea(it.textProperty) {
-                            setOnKeyPressed {
-                                // commitEdit(item)
 
-                                model.theory.value.forEach {
-                                    println(it.text)
+                        children.bind(it.value) {
+
+                            textarea(it.textProperty) {
+                                setOnKeyPressed {
+                                    // commitEdit(item)
+
+                                    model.theory.value.forEach {
+                                        println(it.text)
+                                    }
                                 }
+
+                                setPrefSize(240.0, 200.0)
+                                padding = Insets(10.0, 5.0, 10.0, 5.0)
+                                addClass(Styles.theory)
+
                             }
-
-                            setPrefSize(240.0, 200.0)
-                            padding = Insets(10.0, 5.0, 10.0, 5.0)
-                            addClass(Styles.theory)
-
                         }
                     }
-
                 }
             }
 

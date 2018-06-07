@@ -5,10 +5,22 @@ import tornadofx.*
 
 class MainController : Controller() {
 
-    val sightList = mutableListOf<Sight>().observable()
+    var sightList = mutableListOf<Sight>().observable()
 
     fun addPerformanceAs(index: Int, text: String) {
-        sightList.get(index).performanceAs.add(PerformanceAs(text))
+        sightList[index].performanceAs.add(PerformanceAs(text))
+    }
+
+    fun addNNViewOne(index: Int, text: String) {
+        sightList[index].nnViewOne.add(NNView(text))
+    }
+
+    fun addNNViewTwo(index: Int, text: String) {
+        sightList[index].nnViewTwo.add(NNView(text))
+    }
+
+    fun addTheory(index: Int, text: String) {
+        sightList[index].theory.add(Theory(text))
     }
 
     init {

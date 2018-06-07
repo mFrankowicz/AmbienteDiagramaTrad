@@ -1,5 +1,6 @@
 package com.model
 
+import com.control.MainController
 import javafx.beans.property.*
 import javafx.collections.ObservableList
 import tornadofx.*
@@ -27,8 +28,6 @@ class Sight(sightNumber: Int,
     val theoryProperty = SimpleListProperty<Theory>(theory)
     var theory by theoryProperty
 
-
-
 }
 
 class SightItemViewModel : ItemViewModel<Sight>() {
@@ -48,9 +47,6 @@ class SightItemViewModel : ItemViewModel<Sight>() {
     val theory = bind(autocommit = true) {
         item?.theoryProperty
     }
-
-
-
 }
 
 class SightScope : Scope() {
