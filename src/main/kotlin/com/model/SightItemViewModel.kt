@@ -1,9 +1,9 @@
 package com.model
 
-import com.control.MainController
 import javafx.beans.property.*
 import javafx.collections.ObservableList
 import tornadofx.*
+import java.util.*
 
 
 class Sight(sightNumber: Int,
@@ -53,16 +53,19 @@ class SightScope : Scope() {
     val model = SightItemViewModel()
 }
 
-abstract class Item(text: String) {
+abstract class Item(text: String, id: String) {
     val textProperty = SimpleStringProperty(text)
     var text by textProperty
+
+    val idProperty = SimpleStringProperty(id)
+    var id by idProperty
 }
 
-class PerformanceAs(text: String) : Item(text)
+class PerformanceAs(text: String, id: String) : Item(text, id)
 
-class NNView(text: String) : Item(text)
+class NNView(text: String, id: String) : Item(text, id)
 
-class Theory(text: String) : Item(text)
+class Theory(text: String, id: String) : Item(text, id)
 
 /*
 class GenericItemViewModel (property: ObjectProperty<Item>) : ItemViewModel<Item>(itemProperty = property) {
