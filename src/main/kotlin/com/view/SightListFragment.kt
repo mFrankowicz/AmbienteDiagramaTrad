@@ -9,6 +9,9 @@ class SightListFragment : Fragment() {
 
     //val model = SightItemViewModel(itemProperty)
 
+    private val _w = 310.0
+    private val _h = 250.0
+
     override val scope = super.scope as SightScope
 
     override val root = hbox(15) {
@@ -28,7 +31,7 @@ class SightListFragment : Fragment() {
 
                         children.bind(it.value) { i ->
 
-                            textfield(i.textProperty) {
+                            textarea(i.textProperty) {
                                 setOnKeyPressed {
                                     //commitEdit(item)
                                     commitValue()
@@ -37,7 +40,8 @@ class SightListFragment : Fragment() {
                                     }
                                 }
 
-                                prefWidth = 250.0
+                                setPrefSize(_w, _h)
+                                //prefHeight = 400.0
                                 addClass(Styles.performanceAs)
 
                             }
@@ -57,7 +61,7 @@ class SightListFragment : Fragment() {
 
                         children.bind(it.value) { i ->
 
-                            textfield(i.textProperty) {
+                            textarea(i.textProperty) {
                                 setOnKeyPressed {
                                     //commitEdit(item)
 
@@ -66,7 +70,7 @@ class SightListFragment : Fragment() {
                                     }
                                 }
 
-                                setPrefSize(200.0, 60.0)
+                                setPrefSize(_w, _h)
                                 padding = Insets(10.0, 10.0, 10.0, 10.0)
                                 addClass(Styles.nnView)
 
@@ -86,7 +90,7 @@ class SightListFragment : Fragment() {
 
                         children.bind(it.value) { i ->
 
-                            textfield(i.textProperty) {
+                            textarea(i.textProperty) {
                                 setOnKeyPressed {
                                     //commitEdit(item)
 
@@ -95,7 +99,7 @@ class SightListFragment : Fragment() {
                                     }
                                 }
 
-                                setPrefSize(200.0, 60.0)
+                                setPrefSize(_w, _h)
                                 padding = Insets(10.0, 10.0, 10.0, 10.0)
                                 addClass(Styles.nnView)
 
@@ -126,7 +130,7 @@ class SightListFragment : Fragment() {
                                     }
                                 }
 
-                                setPrefSize(240.0, 200.0)
+                                setPrefSize(_w, _h)
                                 padding = Insets(10.0, 5.0, 10.0, 5.0)
                                 addClass(Styles.theory)
 

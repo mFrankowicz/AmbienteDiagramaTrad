@@ -23,27 +23,30 @@ class MainView : View ("Main") {
                     }
                 }
 
-            }
+                menu("nota") {
 
-            anchorpane {
+                    menu("inserir") {
 
-                anchorpaneConstraints {
+                        action {
 
-                    leftAnchor = 0.0
-                    rightAnchor = 0.0
-                    bottomAnchor = 0.0
-                    topAnchor = 30.0
+                            find(NoteView::class).openWindow(stageStyle = StageStyle.UTILITY)
+                        }
 
-                }
+                    }
+                    menu("inserir2") {
 
-                hbox {
+                        action {
 
-                    button("tradução\nMargir") {
+                            find(NoteView::class).openWindow(stageStyle = StageStyle.UTILITY)
+                        }
 
-                        setPrefSize(200.0,200.0)
+                    }
+                    menu("inserir3") {
 
+                        action {
 
-
+                            find(NoteView::class).openWindow(stageStyle = StageStyle.UTILITY)
+                        }
 
                     }
 
@@ -53,8 +56,29 @@ class MainView : View ("Main") {
 
         }
 
+        pane {
 
+            anchorpaneConstraints {
 
+                leftAnchor = 50
+                topAnchor = 100
+
+            }
+
+            hbox {
+
+                button("tradução\nMargit") {
+
+                    setPrefSize(200.0,200.0)
+
+                    action {
+                        find<TranslatorView>(mapOf(TranslatorView::dbName to "margitDB")).openWindow(stageStyle = StageStyle.DECORATED)
+                    }
+                }
+
+            }
+
+        }
 
     }
 

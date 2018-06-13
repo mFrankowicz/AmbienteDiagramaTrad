@@ -24,21 +24,21 @@ class Styles : Stylesheet() {
         performanceAs {
             backgroundColor += Color.TRANSPARENT
             padding = box(5.pt)
-            fontWeight = FontWeight.BOLD
-            fontSize = 13.pt
-            textFill = Color.BLUE
+            //fontWeight = FontWeight.BOLD
+            //65fontSize = 13.pt
+            textFill = Color.BLACK
         }
 
         nnView {
-            backgroundColor += Color.YELLOW
-            borderColor += box(Color.BLACK)
-            borderWidth += box(1.pt)
+            backgroundColor += Color.TRANSPARENT
+            /*borderColor += box(Color.BLACK)
+            borderWidth += box(1.pt)*/
         }
 
         theory {
-            backgroundColor += Color.LIGHTGRAY
-            borderColor += box(Color.BLACK)
-            borderWidth += box(1.pt)
+            backgroundColor += Color.TRANSPARENT
+            /*borderColor += box(Color.BLACK)
+            borderWidth += box(1.pt)*/
 
             content {
                 backgroundColor += Color.LIGHTGRAY

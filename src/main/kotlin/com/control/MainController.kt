@@ -28,35 +28,16 @@ class MainController : Controller() {
 
         LocalRepository.saveToDB(sightList, dbName)
 
+
     }
 
     fun loadFromLocalDb(dbName: String? = "rootDB") {
+
+        sightList =  mutableListOf<Sight>().observable()
+
         LocalRepository.loadFromDB(dbName)!!.forEach { sight ->
             sightList.add(sight)
         }
-        sightList.forEach {
-            println(it.sightNumber)
-        }
-    }
-
-
-    init {
-
-        /*for(i in 0..31) {
-            val sight = Sight(i,
-                    mutableListOf(PerformanceAs("perf1 $i"), PerformanceAs("perf2 $i")).observable(),
-                    mutableListOf(NNView("View one n $i"), NNView("View one 2 n$i")).observable(),
-                    mutableListOf(NNView("View two n $i"), NNView("View two 2 n$i")).observable(),
-                    mutableListOf(Theory("Therory n $i")).observable())
-
-            sightList.add(i, sight)
-
-            println(i)
-        }*/
-        //println(LocalRepository.db)
-        /*LocalRepository.loadFromDB()!!.forEach { sight ->
-            sightList.add(sight)
-        }*/
         sightList.forEach {
             println(it.sightNumber)
         }

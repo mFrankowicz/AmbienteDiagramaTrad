@@ -24,7 +24,7 @@ object LocalRepository {
             autoCompact= false
         }
 
-        db.listCollectionNames().clear()
+        //db.listCollectionNames().clear()
 
         list.forEach {
             val collection = db.getCollection("${it.sightNumber}")
@@ -33,7 +33,11 @@ object LocalRepository {
                 val doc = documentOf("type" to "performanceAs","id" to it.id ,"text" to it.text)
                 if(collection.find("id" eq it.id).any()) {
                     println("found $it with id: ${it.id}, updating to $doc")
-                    collection.update("id" eq it.id, doc)
+                    if(doc["text"] == "") {
+                        collection.remove("id" eq it.id)
+                    } else {
+                        collection.update("id" eq it.id, doc)
+                    }
                 } else {
                     println("did'nt found $it with id: ${it.id}, creating new $doc")
                     collection.insert(doc)
@@ -44,7 +48,11 @@ object LocalRepository {
                 val doc = documentOf("type" to "nnViewOne", "id" to it.id , "text" to it.text)
                 if(collection.find("id" eq it.id).any()) {
                     println("found $it with id: ${it.id}, updating to $doc")
-                    collection.update("id" eq it.id, doc)
+                    if(doc["text"] == "") {
+                        collection.remove("id" eq it.id)
+                    } else {
+                        collection.update("id" eq it.id, doc)
+                    }
                 } else {
                     println("did'nt found $it with id: ${it.id}, creating new $doc")
                     collection.insert(doc)
@@ -54,7 +62,11 @@ object LocalRepository {
                 val doc = documentOf("type" to "nnViewTwo", "id" to it.id , "text" to it.text)
                 if(collection.find("id" eq it.id).any()) {
                     println("found $it with id: ${it.id}, updating to $doc")
-                    collection.update("id" eq it.id, doc)
+                    if(doc["text"] == "") {
+                        collection.remove("id" eq it.id)
+                    } else {
+                        collection.update("id" eq it.id, doc)
+                    }
                 } else {
                     println("did'nt found $it with id: ${it.id}, creating new $doc")
                     collection.insert(doc)
@@ -64,7 +76,11 @@ object LocalRepository {
                 val doc = documentOf("type" to "theory", "id" to it.id , "text" to it.text)
                 if(collection.find("id" eq it.id).any()) {
                     println("found $it with id: ${it.id}, updating to $doc")
-                    collection.update("id" eq it.id, doc)
+                    if(doc["text"] == "") {
+                        collection.remove("id" eq it.id)
+                    } else {
+                        collection.update("id" eq it.id, doc)
+                    }
                 } else {
                     println("did'nt found $it with id: ${it.id}, creating new $doc")
                     collection.insert(doc)
