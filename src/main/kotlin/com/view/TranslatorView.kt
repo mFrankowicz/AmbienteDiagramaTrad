@@ -1,28 +1,21 @@
 package com.view
 
-import com.control.MainController
+import com.control.TranslationController
 import com.model.SightScope
 import javafx.geometry.Insets
-import javafx.stage.StageStyle
 import tornadofx.*
 
 class TranslatorView : Fragment("Translate") {
-    val controller: MainController by inject()
+    val controller: TranslationController by inject()
 
     val dbName: String by param()
-
-    init {
-
-        controller.loadFromLocalDb(dbName)
-
-    }
 
     override val root = scrollpane {
 
         setMinSize(1000.0, 600.0)
 
         runAsync {
-            return@runAsync controller.sightList
+            return@runAsync controller.loadFromLocalDb(dbName)
         } ui {
 
             vbox(5) {

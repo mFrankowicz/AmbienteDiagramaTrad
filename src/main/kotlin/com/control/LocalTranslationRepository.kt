@@ -1,19 +1,41 @@
 package com.control
 
-import com.model.NNView
-import com.model.PerformanceAs
-import com.model.Sight
-import com.model.Theory
+import com.model.*
+import com.sun.xml.internal.stream.writers.WriterUtility
+import javafx.beans.property.SimpleStringProperty
+import javafx.beans.value.ObservableStringValue
 import javafx.collections.ObservableList
 import org.dizitart.kno2.documentOf
 import org.dizitart.kno2.filters.eq
 import org.dizitart.kno2.getCollection
 import org.dizitart.kno2.nitrite
+import org.dizitart.kno2.tool.exportTo
+import org.dizitart.kno2.tool.importFrom
+import org.dizitart.no2.Document
 import tornadofx.*
 import java.io.File
+import java.io.Writer
 
-object LocalRepository {
+object LocalTranslationRepository {
 
+
+    fun createNewDBForUser(user: User) {
+
+        val newDB = nitrite {
+            file = File("src/main/resources/${user.userDBName}")
+            autoCommitBufferSize = 2048
+            compress = false
+            autoCompact= false
+        }
+
+        newDB.importFrom(File("src/main/resources/rootDBFile"))
+
+        for(i in 0..31) {
+            val collection = newDB.getCollection(i.toString())
+            collection.insert(documentOf("ownerID" to user.userDBName))
+
+        }
+    }
 
     fun saveToDB(list: MutableList<Sight>, dbName: String? = "rootDB") {
 
@@ -28,6 +50,12 @@ object LocalRepository {
 
         list.forEach {
             val collection = db.getCollection("${it.sightNumber}")
+
+            /*val ownerIDDoc = documentOf("ownerID" to it.ownerID)
+            if(collection.find("ownerID" eq it.ownerID).any()) {
+                println("found $it with ownerID: ${it.ownerID}, updating to $ownerIDDoc")
+                collection.update("id" eq it.ownerID, ownerIDDoc)
+            }*/
 
             it.performanceAs.forEach {
                 val doc = documentOf("type" to "performanceAs","id" to it.id ,"text" to it.text)
@@ -91,7 +119,7 @@ object LocalRepository {
         db.close()
     }
 
-    fun loadFromDB(dbName: String? = "rootDB") : ObservableList<Sight>? {
+    fun loadFromDB(dbName: String? = "rootDB") : ObservableList<Sight> {
 
         val db = nitrite {
             file = File("src/main/resources/$dbName")

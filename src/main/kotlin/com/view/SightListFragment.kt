@@ -19,7 +19,6 @@ class SightListFragment : Fragment() {
         runAsync {
             return@runAsync scope.model
         } ui { model ->
-            val sightIndex: Int = model.sightNumber.value as Int
 
             // Performance As...
             anchorpane {

@@ -1,10 +1,13 @@
 package com.control
 
 import com.model.*
+import javafx.collections.ObservableList
 import tornadofx.*
 import java.util.*
-
-class MainController : Controller() {
+// TODO: online DB integration
+// TODO: notes system
+// TODO: refactor list access to integrate multi user DB
+class TranslationController : Controller() {
 
     var sightList = mutableListOf<Sight>().observable()
 
@@ -26,21 +29,31 @@ class MainController : Controller() {
 
     fun saveToLocalDb(dbName: String? = "rootDB") {
 
-        LocalRepository.saveToDB(sightList, dbName)
-
+        LocalTranslationRepository.saveToDB(sightList, dbName)
 
     }
 
-    fun loadFromLocalDb(dbName: String? = "rootDB") {
+    /*fun loadFromLocalDb(dbName: String? = "rootDB") {
 
         sightList =  mutableListOf<Sight>().observable()
 
-        LocalRepository.loadFromDB(dbName)!!.forEach { sight ->
+        LocalTranslationRepository.loadFromDB(dbName)!!.forEach { sight ->
             sightList.add(sight)
         }
         sightList.forEach {
             println(it.sightNumber)
         }
+    }*/
+
+    fun loadFromLocalDb(dbName: String? = "rootDB") : ObservableList<Sight> {
+
+        sightList =  mutableListOf<Sight>().observable()
+
+        LocalTranslationRepository.loadFromDB(dbName)!!.forEach { sight ->
+            sightList.add(sight)
+        }
+
+        return sightList
     }
 
 }

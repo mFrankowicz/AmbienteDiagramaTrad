@@ -16,6 +16,9 @@ class Sight(sightNumber: Int,
     val sightNumberProperty = SimpleIntegerProperty(sightNumber)
     var sightNumber by sightNumberProperty
 
+    val ownerIDProperty = SimpleStringProperty()
+    var ownerID by ownerIDProperty
+
     val performanceAsProperty = SimpleListProperty<PerformanceAs>(performanceAs)
     var performanceAs by performanceAsProperty
 
@@ -34,6 +37,9 @@ class SightItemViewModel : ItemViewModel<Sight>() {
 
     val sightNumber = bind(autocommit = true) {
         item?.sightNumberProperty
+    }
+    val ownerID = bind(autocommit = true) {
+        item?.ownerIDProperty
     }
     val performanceAs = bind(autocommit = true) {
         item?.performanceAsProperty

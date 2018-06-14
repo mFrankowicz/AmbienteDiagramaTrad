@@ -1,12 +1,12 @@
 package com.view
 
-import com.control.MainController
+import com.control.TranslationController
 import javafx.scene.control.ToggleGroup
 import tornadofx.*
 
 class CreateItemView : View() {
 
-    val controller: MainController by inject()
+    val controller: TranslationController by inject()
 
     val index: Int by param()
 

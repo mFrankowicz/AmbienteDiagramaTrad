@@ -1,26 +1,20 @@
 package com.view
 
-import com.control.MainController
+import com.control.TranslationController
 import com.model.SightScope
 import javafx.geometry.Insets
 import javafx.stage.StageStyle
 import tornadofx.*
 
 class EditorView : View("Editor") {
-    val controller: MainController by inject()
-
-    init {
-
-        controller.loadFromLocalDb()
-
-    }
+    val controller: TranslationController by inject()
 
     override val root = scrollpane {
 
         setMinSize(1000.0, 600.0)
 
         runAsync {
-            return@runAsync controller.sightList
+            return@runAsync controller.loadFromLocalDb()
         } ui {
 
             vbox(5) {
