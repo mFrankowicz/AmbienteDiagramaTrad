@@ -5,9 +5,10 @@ import tornadofx.*
 
 class Note (authorID: String,
             thisNoteID: String,
+            dbReferenceID: String,
             sightReference: Int,
-            otherNoteIDReference: String?,
-            text: String
+            text: String,
+            otherNoteIDReference: String?
             ) {
 
     val authorIDProperty = SimpleStringProperty(authorID)
@@ -15,6 +16,9 @@ class Note (authorID: String,
 
     val thisNoteIDProperty = SimpleStringProperty(thisNoteID)
     var thisNoteID by thisNoteIDProperty
+
+    val dbReferenceIDProperty = SimpleStringProperty(dbReferenceID)
+    var dbReferenceID by dbReferenceIDProperty
 
     val sightReferenceProperty = SimpleIntegerProperty(sightReference)
     var sightReference by sightReferenceProperty
@@ -34,6 +38,10 @@ class NoteViewModel : ItemViewModel<Note>() {
 
     val thisNoteID = bind(autocommit = true) {
         item?.thisNoteIDProperty
+    }
+
+    val dbReferenceID = bind(autocommit = true) {
+        item?.dbReferenceIDProperty
     }
 
     val sightReference = bind(autocommit = true) {

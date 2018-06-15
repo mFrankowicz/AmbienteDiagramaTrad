@@ -1,6 +1,7 @@
 package com.view
 
 import com.control.AuthController
+import com.control.AuthHolder
 import com.model.UserViewModel
 import javafx.stage.StageStyle
 import tornadofx.*
@@ -39,7 +40,8 @@ class LoginView : View("Login") {
                         userViewModel.userPassword.value,
                         userViewModel.remember.value
                 ).let {
-                    if(it) {
+                    if(it.first) {
+                        AuthHolder.userLogged = it.second!!
                         find(MainView::class).openWindow()
                         //this@LoginView.close()
                     } else {

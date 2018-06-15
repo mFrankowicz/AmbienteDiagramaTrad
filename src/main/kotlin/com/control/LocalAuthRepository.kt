@@ -68,4 +68,17 @@ object LocalAuthRepository {
 
     }
 
+    fun findById(id: String) : User? {
+
+        val userList = db.getCollection(userCollection)
+        var user: User? = null
+        userList.find("userInternalID" eq id).forEach {
+            val userLogin = (it["userLogin"]).toString()
+            val userPassword = (it["userPassword"]).toString()
+            val userName = (it["userName"]).toString()
+            val userInternalID = (it["userInternalID"]).toString()
+            user = User(userLogin, userPassword, userName, userInternalID)
+        }
+        return user
+    }
 }

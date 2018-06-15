@@ -8,7 +8,7 @@ class AuthController : Controller() {
 
     var usersMapList = mutableMapOf<String, User>().observable()
 
-    fun tryLogin(userlogin: String, userPassword: String, remember: Boolean) : Boolean {
+    fun tryLogin(userlogin: String, userPassword: String, remember: Boolean) : Pair<Boolean, User?> {
 
         val successLogin =  LocalAuthRepository.loadCredentials(userlogin, userPassword)
         return if(successLogin != null) {
@@ -20,9 +20,9 @@ class AuthController : Controller() {
                             | UUID: ${successLogin.userInternalID}
                             | dbName: ${successLogin.userDBName}
                         """.trimMargin())
-            true
+            Pair(true, successLogin)
         } else {
-            false
+            Pair(false, null)
         }
 
     }

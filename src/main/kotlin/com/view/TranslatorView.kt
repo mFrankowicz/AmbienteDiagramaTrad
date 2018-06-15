@@ -1,14 +1,17 @@
 package com.view
 
+import com.control.AuthHolder
 import com.control.TranslationController
 import com.model.SightScope
+import com.model.User
 import javafx.geometry.Insets
 import tornadofx.*
 
 class TranslatorView : Fragment("Translate") {
     val controller: TranslationController by inject()
 
-    val dbName: String by param()
+    val user: User by param()
+    val dbName = user.userDBName
 
     override val root = scrollpane {
 
@@ -35,9 +38,30 @@ class TranslatorView : Fragment("Translate") {
                                 leftAnchor = 30
                             }
 
-                            button("s") {
-                                action {
-                                    controller.saveToLocalDb(dbName)
+                            buttonbar {
+
+                                button("s") {
+
+                                    prefWidth = 30.0
+
+                                    disableWhen((AuthHolder.userLogged?.userDBName != dbName).toProperty())
+                                    hiddenWhen((AuthHolder.userLogged?.userDBName != dbName).toProperty())
+
+                                    action {
+                                        controller.saveToLocalDb(dbName)
+                                    }
+                                }
+
+                                button("n.t") {
+
+                                    prefWidth = 30.0
+
+                                    action {
+
+                                        find<NoteView>(mapOf(NoteView::translationNotes to user)).openWindow()
+
+                                    }
+
                                 }
                             }
                         }
