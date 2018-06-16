@@ -35,10 +35,12 @@ class TranslatorView : Fragment("Translate") {
 
                             anchorpaneConstraints {
                                 bottomAnchor = 2
-                                leftAnchor = 30
+                                leftAnchor = 100
                             }
 
                             buttonbar {
+
+                                buttonMinWidth = 30.0
 
                                 button("s") {
 
@@ -54,11 +56,11 @@ class TranslatorView : Fragment("Translate") {
 
                                 button("n.t") {
 
-                                    prefWidth = 30.0
+                                    prefWidth = 40.0
 
                                     action {
 
-                                        find<NoteView>(mapOf(NoteView::translationNotes to user)).openWindow()
+                                        find<NoteView>(mapOf(NoteView::translationNotes to user, NoteView::fromSight to index)).openWindow()
 
                                     }
 
@@ -69,7 +71,7 @@ class TranslatorView : Fragment("Translate") {
 
                             anchorpaneConstraints {
                                 bottomAnchor = 5
-                                leftAnchor = 60
+                                leftAnchor = 5
                             }
 
                             label {
