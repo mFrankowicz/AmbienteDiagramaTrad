@@ -1,0 +1,1412 @@
+{
+  "collections" : [ {
+    "name" : "22",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972950,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "d9a7b5c3-f730-4923-9d49-e389492af230",
+        "text" : "Historische Sicht",
+        "_id" : 10506655972950,
+        "_revision" : 8,
+        "_modified" : 1528917561297
+      }
+    }, {
+      "key" : 10506655972951,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "2e450bf7-5454-49f7-8ff4-a0e0d14af20b",
+        "text" : "Sicht der Sammlung",
+        "_id" : 10506655972951,
+        "_revision" : 8,
+        "_modified" : 1528917561297
+      }
+    }, {
+      "key" : 10506655972952,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "3af39f64-7167-482b-adad-b265824a7e9c",
+        "text" : "Performance als Relikt\nPerformance als Wandzeitung\nPerformance als ständige Sammlung\nPerformance als „totale“ Installation\nPerformance als Installation",
+        "_id" : 10506655972952,
+        "_revision" : 8,
+        "_modified" : 1528917561297
+      }
+    }, {
+      "key" : 10506655972953,
+      "value" : {
+        "type" : "theory",
+        "id" : "1ffd4e41-03ea-4ec2-90de-88b4d07425a7",
+        "text" : "Kunsthistorik\nKulturhistorik",
+        "_id" : 10506655972953,
+        "_revision" : 8,
+        "_modified" : 1528917561298
+      }
+    } ]
+  }, {
+    "name" : "23",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972954,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "4c572ea4-812a-4d5c-807f-c491cfb36e2e",
+        "text" : "Strukturelle Sicht\n     Strukturale Sicht",
+        "_id" : 10506655972954,
+        "_revision" : 8,
+        "_modified" : 1528917561300
+      }
+    }, {
+      "key" : 10506655972955,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "a3d966eb-43e1-46df-b27a-e521ab5668a8",
+        "text" : "Sicht der Partitur",
+        "_id" : 10506655972955,
+        "_revision" : 8,
+        "_modified" : 1528917561300
+      }
+    }, {
+      "key" : 10506655972956,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "4e8de3bc-d8b1-41fc-bec3-6a896f2f451d",
+        "text" : "Performance als Zeichensystem\n„Kollaborative Environments“ (1)\n",
+        "_id" : 10506655972956,
+        "_revision" : 8,
+        "_modified" : 1528917561300
+      }
+    }, {
+      "key" : 10506655972957,
+      "value" : {
+        "type" : "theory",
+        "id" : "33635431-a26b-4008-b905-2b1ecfb0110c",
+        "text" : "Strukturalismus / Semiotik / \nSystemtheorie",
+        "_id" : 10506655972957,
+        "_revision" : 8,
+        "_modified" : 1528917561301
+      }
+    } ]
+  }, {
+    "name" : "24",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972958,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "ea6f0d4a-1315-450b-98be-2208e3943577",
+        "text" : "Akustische „Sicht“",
+        "_id" : 10506655972958,
+        "_revision" : 8,
+        "_modified" : 1528917561302
+      }
+    }, {
+      "key" : 10506655972959,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "d6a85c97-a629-4c66-87fb-fd283f030e2c",
+        "text" : "räumliche Sicht\n(architektonische Sicht)\n„Der Ort und das Werk“\n„Der Ort als Performance“",
+        "_id" : 10506655972959,
+        "_revision" : 8,
+        "_modified" : 1528917561303
+      }
+    }, {
+      "key" : 10506655972960,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "215a8875-4efb-4444-952c-babd0ef555c8",
+        "text" : "Performance als ortlose Kunst\nArchitekturdekonstruktion als Performance\nPerformance als Vereinbarung\nDie verborgene Performance",
+        "_id" : 10506655972960,
+        "_revision" : 8,
+        "_modified" : 1528917561303
+      }
+    }, {
+      "key" : 10506655972961,
+      "value" : {
+        "type" : "theory",
+        "id" : "a38d0192-4ec0-4934-b30a-cd95b6ff6a8a",
+        "text" : "Musiktheorie\nWahrnehmungstheorien zur Architektur (B. Leitner)",
+        "_id" : 10506655972961,
+        "_revision" : 8,
+        "_modified" : 1528917561303
+      }
+    } ]
+  }, {
+    "name" : "25",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972962,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "b7330fdf-cad9-470e-a7e2-b46b051ac02d",
+        "text" : "Bewegungssicht",
+        "_id" : 10506655972962,
+        "_revision" : 8,
+        "_modified" : 1528917561305
+      }
+    }, {
+      "key" : 10506655972963,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "72e58d74-fa4d-433e-8770-a6841fde97a8",
+        "text" : "Zeitliche Sicht\n„100 Momente ergeben eine Momenttheorie“",
+        "_id" : 10506655972963,
+        "_revision" : 8,
+        "_modified" : 1528917561305
+      }
+    }, {
+      "key" : 10506655972964,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "c9092595-c4fb-434d-a8e3-52ac7d9774cb",
+        "text" : "Performance als Inszenierung",
+        "_id" : 10506655972964,
+        "_revision" : 8,
+        "_modified" : 1528917561306
+      }
+    }, {
+      "key" : 10506655972965,
+      "value" : {
+        "type" : "theory",
+        "id" : "4ed6d456-0e56-4a1d-86d4-0440ef95fd0e",
+        "text" : "Tanztheorie\nFilmtheorie\nDromologie",
+        "_id" : 10506655972965,
+        "_revision" : 8,
+        "_modified" : 1528917561306
+      }
+    } ]
+  }, {
+    "name" : "26",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972966,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "8544f643-7bf8-414c-a897-ccdc24dcdcdc",
+        "text" : "Pragmatistische Sicht",
+        "_id" : 10506655972966,
+        "_revision" : 8,
+        "_modified" : 1528917561308
+      }
+    }, {
+      "key" : 10506655972967,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "e6521493-8c01-47d9-ac3a-102d0f11953d",
+        "text" : "Prozeßsicht",
+        "_id" : 10506655972967,
+        "_revision" : 8,
+        "_modified" : 1528917561308
+      }
+    }, {
+      "key" : 10506655972968,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "9e495599-5981-4677-b702-18ea9974f2f0",
+        "text" : "Performance als Prozeß",
+        "_id" : 10506655972968,
+        "_revision" : 8,
+        "_modified" : 1528917561308
+      }
+    }, {
+      "key" : 10506655972969,
+      "value" : {
+        "type" : "theory",
+        "id" : "77284357-445f-4bbb-98be-b54b7f680127",
+        "text" : "Pragmatismus",
+        "_id" : 10506655972969,
+        "_revision" : 8,
+        "_modified" : 1528917561309
+      }
+    } ]
+  }, {
+    "name" : "27",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972970,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "78f38b29-2ee1-4fdf-bc39-5385fcc0693b",
+        "text" : "Performativität als Sicht",
+        "_id" : 10506655972970,
+        "_revision" : 8,
+        "_modified" : 1528917561310
+      }
+    }, {
+      "key" : 10506655972971,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "31c7c19c-e7ba-41b9-acd9-777132124cfd",
+        "text" : "...",
+        "_id" : 10506655972971,
+        "_revision" : 8,
+        "_modified" : 1528917561311
+      }
+    }, {
+      "key" : 10506655972972,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "8a28e8aa-a281-4e17-a438-f86de86abff1",
+        "text" : "„performative turn“ im ästhetischen Dasein\n„Vom Werkhaften zum Performativen“",
+        "_id" : 10506655972972,
+        "_revision" : 8,
+        "_modified" : 1528917561311
+      }
+    }, {
+      "key" : 10506655972973,
+      "value" : {
+        "type" : "theory",
+        "id" : "954c422e-8512-4ff3-a839-5d85f7fa9d63",
+        "text" : "Performative Theorien\nSprechakttheorie\nfeministische Theorien (J. Butler)",
+        "_id" : 10506655972973,
+        "_revision" : 8,
+        "_modified" : 1528917561311
+      }
+    } ]
+  }, {
+    "name" : "28",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972974,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "d93507cb-f0c1-4222-88ac-f54363dc1cb5",
+        "text" : "Soziologische Sicht",
+        "_id" : 10506655972974,
+        "_revision" : 8,
+        "_modified" : 1528917561313
+      }
+    }, {
+      "key" : 10506655972975,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "577ff6ae-8864-4964-8610-2795f53c7e38",
+        "text" : "Anthropologische Sicht\nEthnologische Sicht\nRollensicht\n„Anthropologie in Aktion“\n„Tod als Performance“",
+        "_id" : 10506655972975,
+        "_revision" : 8,
+        "_modified" : 1528917561314
+      }
+    }, {
+      "key" : 10506655972976,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "3edbddcc-a7c9-44dc-b70c-6fd1da4ad9ff",
+        "text" : "Performance als gesellschaftlich geprägtes Rollenspiel\nPerformance als soziale Praxis\nPerformance als Ritual\nPerformance als Mimesis",
+        "_id" : 10506655972976,
+        "_revision" : 8,
+        "_modified" : 1528917561314
+      }
+    }, {
+      "key" : 10506655972977,
+      "value" : {
+        "type" : "theory",
+        "id" : "4c6f44d7-2c91-4764-8085-0fbea500d545",
+        "text" : "Anthropologie / Ethnologie / Theologie / Theateranthropologie / Ethnographie / \nKulturanthropologie / \nSpielregeln der Kunst",
+        "_id" : 10506655972977,
+        "_revision" : 8,
+        "_modified" : 1528917561314
+      }
+    } ]
+  }, {
+    "name" : "29",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972978,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "d3004f5e-985c-4206-b372-b239f1d8a88e",
+        "text" : "Philosophische Sicht",
+        "_id" : 10506655972978,
+        "_revision" : 8,
+        "_modified" : 1528917561316
+      }
+    }, {
+      "key" : 10506655972979,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "c563cf06-a671-4f3b-b2f8-176d7ab59311",
+        "text" : "Sicht der Kunstwissenschaft\nSicht der Theaterwissenschaft",
+        "_id" : 10506655972979,
+        "_revision" : 8,
+        "_modified" : 1528917561316
+      }
+    }, {
+      "key" : 10506655972980,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "60e81d70-c4a8-4628-a33f-97031123aa50",
+        "text" : "Performance als Sachverhaltsdarstellung\nPerformance als Theater",
+        "_id" : 10506655972980,
+        "_revision" : 8,
+        "_modified" : 1528917561316
+      }
+    }, {
+      "key" : 10506655972981,
+      "value" : {
+        "type" : "theory",
+        "id" : "6b32bd40-5ec8-48b2-91f9-3782056f0dde",
+        "text" : "Theatertheorie",
+        "_id" : 10506655972981,
+        "_revision" : 8,
+        "_modified" : 1528917561317
+      }
+    } ]
+  }, {
+    "name" : "30",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972982,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "270db6be-cc1b-4e57-b5dc-02e8f4c68909",
+        "text" : "Magische Sicht",
+        "_id" : 10506655972982,
+        "_revision" : 8,
+        "_modified" : 1528917561318
+      }
+    }, {
+      "key" : 10506655972983,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "587e98c0-c5a2-4cde-8db8-e5e8f5b454e8",
+        "text" : "„Höhere Wesen“",
+        "_id" : 10506655972983,
+        "_revision" : 8,
+        "_modified" : 1528917561319
+      }
+    }, {
+      "key" : 10506655972984,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "34531a4f-a4d8-48f3-87aa-4c34f06194fc",
+        "text" : "Performance als Ritual  s.o.\t",
+        "_id" : 10506655972984,
+        "_revision" : 8,
+        "_modified" : 1528917561319
+      }
+    }, {
+      "key" : 10506655972985,
+      "value" : {
+        "type" : "theory",
+        "id" : "4b863798-40f5-471c-b923-c667987ef1e4",
+        "text" : "Alchemie  \n„Manifest Jean Odermatt“",
+        "_id" : 10506655972985,
+        "_revision" : 8,
+        "_modified" : 1528917561319
+      }
+    } ]
+  }, {
+    "name" : "31",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972986,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "d57a6979-93fb-48e5-b3ff-a8bd30ab875b",
+        "text" : "Mythologische Sicht\t ",
+        "_id" : 10506655972986,
+        "_revision" : 8,
+        "_modified" : 1528917561321
+      }
+    }, {
+      "key" : 10506655972987,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "74e2771a-c0cc-4a0b-8caa-3a46a9e0fa2a",
+        "text" : "Inhaltliche Sicht",
+        "_id" : 10506655972987,
+        "_revision" : 8,
+        "_modified" : 1528917561321
+      }
+    }, {
+      "key" : 10506655972988,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "5b8a76dd-a87b-47fd-81fe-6cc152e770c3",
+        "text" : "Peformance als Erinnerungstheater",
+        "_id" : 10506655972988,
+        "_revision" : 8,
+        "_modified" : 1528917561321
+      }
+    }, {
+      "key" : 10506655972989,
+      "value" : {
+        "type" : "theory",
+        "id" : "cfa4929d-7ff3-4849-af10-76180d9881fe",
+        "text" : "Kulturanthropologie",
+        "_id" : 10506655972989,
+        "_revision" : 8,
+        "_modified" : 1528917561322
+      }
+    } ]
+  }, {
+    "name" : "10",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972902,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "40d999a4-de39-42fd-ac7a-de48b922840a",
+        "text" : "Feministische Sicht",
+        "_id" : 10506655972902,
+        "_revision" : 8,
+        "_modified" : 1528917561264
+      }
+    }, {
+      "key" : 10506655972903,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "8f5ed9a6-397e-4039-9227-96e203dc3241",
+        "text" : "Politische Sicht\nInterkulturelle Sicht\n„Absicht und Absichtslosigkeit“\n",
+        "_id" : 10506655972903,
+        "_revision" : 8,
+        "_modified" : 1528917561264
+      }
+    }, {
+      "key" : 10506655972904,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "ade4db7a-1fac-4305-b971-910671af42ec",
+        "text" : "Interkultureller Austausch in der Performance\nPerformance als politisches Phänomen\n(Performance in der Politik)\nPerformance als Demonstration\nPerformance als Praxis der Destabilisierung\nPerformance als Kommunikationsguerilla  s.o.",
+        "_id" : 10506655972904,
+        "_revision" : 8,
+        "_modified" : 1528917561265
+      }
+    }, {
+      "key" : 10506655972905,
+      "value" : {
+        "type" : "theory",
+        "id" : "98d414ef-0997-40b2-9779-ef37e47b1c41",
+        "text" : "Kulturtheorie\nfeminist studies\ngender studies\nanthropology of gender\nKulturhistorik\nSpielregeln der Kunst",
+        "_id" : 10506655972905,
+        "_revision" : 8,
+        "_modified" : 1528917561265
+      }
+    } ]
+  }, {
+    "name" : "11",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972906,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "3baf1dd5-941b-4889-8d95-a155351e3767",
+        "text" : "Emotionale Sicht\n„Emotions“",
+        "_id" : 10506655972906,
+        "_revision" : 8,
+        "_modified" : 1528917561267
+      }
+    }, {
+      "key" : 10506655972907,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "7388febb-2dd6-482b-9c76-554e6bc4479e",
+        "text" : "Ästhetische Sicht\nVisuelle Sicht\n„Ereignis und Aura“",
+        "_id" : 10506655972907,
+        "_revision" : 8,
+        "_modified" : 1528917561267
+      }
+    }, {
+      "key" : 10506655972908,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "fca54678-95ee-43e0-a50f-7059d07e60cb",
+        "text" : "Performance als Aufmerksamkeit\n„performative turn“ im ästhetischen Dasein\n",
+        "_id" : 10506655972908,
+        "_revision" : 8,
+        "_modified" : 1528917561267
+      }
+    }, {
+      "key" : 10506655972909,
+      "value" : {
+        "type" : "theory",
+        "id" : "95e1a4a7-bc05-47f7-a2d5-5f6d7ad1b637",
+        "text" : "Ästhetik\nKunsttheorie\nMorphologie\nEkeltheorie\nKommunikationsästhetik",
+        "_id" : 10506655972909,
+        "_revision" : 8,
+        "_modified" : 1528917561268
+      }
+    } ]
+  }, {
+    "name" : "12",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972910,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "666fff51-62f3-4e3c-b562-93e9c1fd6198",
+        "text" : "Intensitätssicht\n",
+        "_id" : 10506655972910,
+        "_revision" : 8,
+        "_modified" : 1528917561269
+      }
+    }, {
+      "key" : 10506655972911,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "1d4e2451-1b74-4e9c-8bb5-4ce017a08d57",
+        "text" : "„Energieverwandlungen“",
+        "_id" : 10506655972911,
+        "_revision" : 8,
+        "_modified" : 1528917561270
+      }
+    }, {
+      "key" : 10506655972912,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "6984e18d-5b1a-4d06-bcb4-59f1ba31f882",
+        "text" : "„performative Kraft der Kunst“\n",
+        "_id" : 10506655972912,
+        "_revision" : 8,
+        "_modified" : 1528917561270
+      }
+    }, {
+      "key" : 10506655972913,
+      "value" : {
+        "type" : "theory",
+        "id" : "67241706-0af6-450e-bf95-2d8f0677edaa",
+        "text" : "...",
+        "_id" : 10506655972913,
+        "_revision" : 8,
+        "_modified" : 1528917561270
+      }
+    } ]
+  }, {
+    "name" : "13",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972914,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "232ef23b-c41d-4c91-a123-5a1a5d978d64",
+        "text" : "Therapeutische Sicht",
+        "_id" : 10506655972914,
+        "_revision" : 8,
+        "_modified" : 1528917561272
+      }
+    }, {
+      "key" : 10506655972915,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "56a32b40-abed-4e91-a036-37352b01306f",
+        "text" : "Sicht des Künstlers\nSicht der Künstlerin",
+        "_id" : 10506655972915,
+        "_revision" : 8,
+        "_modified" : 1528917561272
+      }
+    }, {
+      "key" : 10506655972916,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "eb1cc529-a472-451d-b29a-558ab2b69c8c",
+        "text" : "Performance als gestalterisches Experimentierfeld\nPerformance als Handlungsform in der therapeutischen Praxis\nPerformance als Katharsis\nPerformance = bewußtes Träumen",
+        "_id" : 10506655972916,
+        "_revision" : 8,
+        "_modified" : 1528917561273
+      }
+    }, {
+      "key" : 10506655972917,
+      "value" : {
+        "type" : "theory",
+        "id" : "35d488bc-2a99-47fb-b638-d09cd928526d",
+        "text" : "Gestalttherapie\nPsychodrama\nPsychotechniken\nUrschreitherapie\nSystemtheorie\nTanztheorie\n",
+        "_id" : 10506655972917,
+        "_revision" : 8,
+        "_modified" : 1528917561273
+      }
+    } ]
+  }, {
+    "name" : "14",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972918,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "319c609e-6c38-478f-971e-dd80c0c21f80",
+        "text" : "Erkenntnistheoretische \n     Sicht   \n„Kunst als Erkenntnissystem“",
+        "_id" : 10506655972918,
+        "_revision" : 8,
+        "_modified" : 1528917561274
+      }
+    }, {
+      "key" : 10506655972919,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "022e8cdb-689a-4f43-baf6-136b91e58348",
+        "text" : "Sprachliche Sicht",
+        "_id" : 10506655972919,
+        "_revision" : 8,
+        "_modified" : 1528917561275
+      }
+    }, {
+      "key" : 10506655972920,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "2c9a4178-926c-4c31-9736-bbd727c6a6af",
+        "text" : "Performance als Sprache",
+        "_id" : 10506655972920,
+        "_revision" : 8,
+        "_modified" : 1528917561275
+      }
+    }, {
+      "key" : 10506655972921,
+      "value" : {
+        "type" : "theory",
+        "id" : "8cca93ab-ef6f-4be1-8907-4eb01372a115",
+        "text" : "analytische Philosophie /\nRhetorik / Sprachwissenschaft /\nStrukturalismus / Sprechakttheorie / Erkenntnistheorie",
+        "_id" : 10506655972921,
+        "_revision" : 8,
+        "_modified" : 1528917561275
+      }
+    } ]
+  }, {
+    "name" : "15",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972922,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "8d49679b-5d53-4782-a8e5-40b4df4052bd",
+        "text" : "Sicht der Oralität",
+        "_id" : 10506655972922,
+        "_revision" : 8,
+        "_modified" : 1528917561277
+      }
+    }, {
+      "key" : 10506655972923,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "00306d98-e0f2-4e93-a558-a46e9a17801e",
+        "text" : "„Oral, multimedial“ (2)",
+        "_id" : 10506655972923,
+        "_revision" : 8,
+        "_modified" : 1528917561278
+      }
+    }, {
+      "key" : 10506655972924,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "1217adf4-c131-4a87-9fe6-cc85d2c672f0",
+        "text" : "Performance als ureigenste menschliche Sprache",
+        "_id" : 10506655972924,
+        "_revision" : 8,
+        "_modified" : 1528917561278
+      }
+    }, {
+      "key" : 10506655972925,
+      "value" : {
+        "type" : "theory",
+        "id" : "9582eed1-a5cf-4196-bffc-75dedac307eb",
+        "text" : "Performative Theorien / Rhetorik / Sprechakttheorie / Ethnologie",
+        "_id" : 10506655972925,
+        "_revision" : 8,
+        "_modified" : 1528917561278
+      }
+    } ]
+  }, {
+    "name" : "16",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972926,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "b9594c9c-f2d8-47f0-932c-83ae2ef263b8",
+        "text" : "Existentielle Sicht",
+        "_id" : 10506655972926,
+        "_revision" : 8,
+        "_modified" : 1528917561280
+      }
+    }, {
+      "key" : 10506655972927,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "15cf28dc-f386-418f-adce-e557e402becc",
+        "text" : "Sicht des Kunstwerks\n„Vom Werkhaften zum Performativen“",
+        "_id" : 10506655972927,
+        "_revision" : 8,
+        "_modified" : 1528917561280
+      }
+    }, {
+      "key" : 10506655972928,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "8aea65ea-ec8a-4133-81c7-5e934ececa27",
+        "text" : "Performance als Werk\n„Kunst ohne Werk“ (1)",
+        "_id" : 10506655972928,
+        "_revision" : 8,
+        "_modified" : 1528917561281
+      }
+    }, {
+      "key" : 10506655972929,
+      "value" : {
+        "type" : "theory",
+        "id" : "bd0eadf2-f3e5-4a22-9051-925358c899a0",
+        "text" : "Bildtheorien",
+        "_id" : 10506655972929,
+        "_revision" : 8,
+        "_modified" : 1528917561281
+      }
+    } ]
+  }, {
+    "name" : "17",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972930,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "8fc3ecbf-9d37-4a2e-9ab0-bad0eb71507c",
+        "text" : "Sicht der Zerstörung",
+        "_id" : 10506655972930,
+        "_revision" : 8,
+        "_modified" : 1528917561283
+      }
+    }, {
+      "key" : 10506655972931,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "c3e4a418-2914-4198-aaaf-087090b78187",
+        "text" : "...",
+        "_id" : 10506655972931,
+        "_revision" : 8,
+        "_modified" : 1528917561283
+      }
+    }, {
+      "key" : 10506655972932,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "3619bdbe-9264-4427-8305-1a7c23b47764",
+        "text" : "Performance als Praxis der Destabilisierung s.o.",
+        "_id" : 10506655972932,
+        "_revision" : 8,
+        "_modified" : 1528917561283
+      }
+    }, {
+      "key" : 10506655972933,
+      "value" : {
+        "type" : "theory",
+        "id" : "f646e0eb-d162-42fb-8ce7-08737efedc69",
+        "text" : "Destruktionskunst (Buch)\n",
+        "_id" : 10506655972933,
+        "_revision" : 8,
+        "_modified" : 1528917561284
+      }
+    } ]
+  }, {
+    "name" : "18",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972934,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "0ec6cd96-c0e2-4990-99d9-237cf3e91a07",
+        "text" : "Sicht der Repräsentation",
+        "_id" : 10506655972934,
+        "_revision" : 8,
+        "_modified" : 1528917561285
+      }
+    }, {
+      "key" : 10506655972935,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "3641fe28-f6ed-4b77-aeb3-aa03d568954b",
+        "text" : "Materiale Sicht\nolfaktive Sicht (Geruch)",
+        "_id" : 10506655972935,
+        "_revision" : 8,
+        "_modified" : 1528917561286
+      }
+    }, {
+      "key" : 10506655972936,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "18686abb-0fd4-4e12-a7d8-87e0c4434adc",
+        "text" : "Performance als Ablagerung\nPerformance als Materialsammlung\nPerformance als bilderzeugende Handlung\nPerformance als Gegenkonzept zur “Repräsentation“  „Kunst ohne Werk“ (2)\nPerformative Skulpturen",
+        "_id" : 10506655972936,
+        "_revision" : 8,
+        "_modified" : 1528917561286
+      }
+    }, {
+      "key" : 10506655972937,
+      "value" : {
+        "type" : "theory",
+        "id" : "f52ab5dd-3b0a-4620-8bcd-2ea8ed6ca1c5",
+        "text" : "Kunsttheorie",
+        "_id" : 10506655972937,
+        "_revision" : 8,
+        "_modified" : 1528917561286
+      }
+    } ]
+  }, {
+    "name" : "19",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972938,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "a3fd5cfe-29c9-4782-b19e-f085fb46828d",
+        "text" : "Unterhaltungssicht",
+        "_id" : 10506655972938,
+        "_revision" : 8,
+        "_modified" : 1528917561288
+      }
+    }, {
+      "key" : 10506655972939,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "c4983de3-b585-4659-98a3-c7df78ca3a96",
+        "text" : "Sicht des Marktes",
+        "_id" : 10506655972939,
+        "_revision" : 8,
+        "_modified" : 1528917561289
+      }
+    }, {
+      "key" : 10506655972940,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "6701ea33-6c0c-42f0-8215-168284c55196",
+        "text" : "Performance als Leistungsschau",
+        "_id" : 10506655972940,
+        "_revision" : 8,
+        "_modified" : 1528917561289
+      }
+    }, {
+      "key" : 10506655972941,
+      "value" : {
+        "type" : "theory",
+        "id" : "1828eb18-4350-4ae2-943c-8002f600011b",
+        "text" : "Medientheorie",
+        "_id" : 10506655972941,
+        "_revision" : 8,
+        "_modified" : 1528917561289
+      }
+    } ]
+  }, {
+    "name" : "0",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972862,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "40fb22d5-fe0e-4094-850a-95c73625444a",
+        "text" : "Kulturtheoretische Sicht",
+        "_id" : 10506655972862,
+        "_revision" : 8,
+        "_modified" : 1528917561233
+      }
+    }, {
+      "key" : 10506655972863,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "cd212297-9e64-4b96-ab43-9bb25a56533e",
+        "text" : "Kontextuelle Sicht\n„Zwischenräume“\n",
+        "_id" : 10506655972863,
+        "_revision" : 8,
+        "_modified" : 1528917561234
+      }
+    }, {
+      "key" : 10506655972864,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "3f543752-154d-488c-8252-257f3c385718",
+        "text" : "Performance als situative Produktion\nPerformance als situatives Experiment",
+        "_id" : 10506655972864,
+        "_revision" : 8,
+        "_modified" : 1528917561234
+      }
+    }, {
+      "key" : 10506655972865,
+      "value" : {
+        "type" : "theory",
+        "id" : "df979b3d-261a-4b51-920c-2ce09d38c83d",
+        "text" : "Kulturtheorie\ncultural studies\nkontextbewußte Theorien",
+        "_id" : 10506655972865,
+        "_revision" : 8,
+        "_modified" : 1528917561234
+      }
+    } ]
+  }, {
+    "name" : "1",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972866,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "6b8bf489-f4cf-4500-bbee-8196d2a85155",
+        "text" : "Entgrenzungssicht",
+        "_id" : 10506655972866,
+        "_revision" : 8,
+        "_modified" : 1528917561235
+      }
+    }, {
+      "key" : 10506655972867,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "3a133ee7-f9bf-453f-8834-4d1d7dd197dc",
+        "text" : "Konzeptuelle Sicht\n„Kunst ohne Personen“",
+        "_id" : 10506655972867,
+        "_revision" : 8,
+        "_modified" : 1528917561236
+      }
+    }, {
+      "key" : 10506655972868,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "31ee0aa0-2258-4415-8c38-9b2ee8928abc",
+        "text" : "Performance als offenes System\nPerformance als Übergangsform\nder Kunst",
+        "_id" : 10506655972868,
+        "_revision" : 8,
+        "_modified" : 1528917561236
+      }
+    }, {
+      "key" : 10506655972869,
+      "value" : {
+        "type" : "theory",
+        "id" : "cc660993-d039-467d-a83a-ec630e3e0d63",
+        "text" : "Das offene Kunstwerk\nSpielregeln der Kunst",
+        "_id" : 10506655972869,
+        "_revision" : 8,
+        "_modified" : 1528917561237
+      }
+    } ]
+  }, {
+    "name" : "2",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972870,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "b53e7c2b-8f60-49d2-a334-265f96ede896",
+        "text" : "Interdisziplinaritätssicht",
+        "_id" : 10506655972870,
+        "_revision" : 8,
+        "_modified" : 1528917561239
+      }
+    }, {
+      "key" : 10506655972871,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "3bb1cdd9-a1fd-4d22-82bd-431a2f7af1ff",
+        "text" : "Sicht der künstlerischen Produktion\n„Kollaborative Environments“",
+        "_id" : 10506655972871,
+        "_revision" : 8,
+        "_modified" : 1528917561239
+      }
+    }, {
+      "key" : 10506655972872,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "8b0fc931-ed19-4a05-8fd1-3aaadcc6b228",
+        "text" : "Performance als personales \nExperimentierfeld",
+        "_id" : 10506655972872,
+        "_revision" : 8,
+        "_modified" : 1528917561240
+      }
+    }, {
+      "key" : 10506655972873,
+      "value" : {
+        "type" : "theory",
+        "id" : "a5ffbfbe-6651-4089-85d4-65518ed095d5",
+        "text" : "performance theory\nErkenntnistheorie",
+        "_id" : 10506655972873,
+        "_revision" : 8,
+        "_modified" : 1528917561240
+      }
+    } ]
+  }, {
+    "name" : "3",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972874,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "520f8e3d-7a14-48da-8c15-5398d01c3b3c",
+        "text" : "Methodensicht",
+        "_id" : 10506655972874,
+        "_revision" : 8,
+        "_modified" : 1528917561242
+      }
+    }, {
+      "key" : 10506655972875,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "8a614e38-8c4f-4e5e-a44b-14c252851740",
+        "text" : "Werkzeugsicht",
+        "_id" : 10506655972875,
+        "_revision" : 8,
+        "_modified" : 1528917561243
+      }
+    }, {
+      "key" : 10506655972876,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "49c6f43e-58ad-48eb-9c03-8fcf6d3c9fac",
+        "text" : "„künstlerische Metapraxis“",
+        "_id" : 10506655972876,
+        "_revision" : 8,
+        "_modified" : 1528917561243
+      }
+    }, {
+      "key" : 10506655972877,
+      "value" : {
+        "type" : "theory",
+        "id" : "1bf3649c-b41b-4a36-b87d-e916d34fb662",
+        "text" : "Dialogische AnsätzeSicht der Innovation",
+        "_id" : 10506655972877,
+        "_revision" : 8,
+        "_modified" : 1528917561243
+      }
+    } ]
+  }, {
+    "name" : "4",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972878,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "b68b9cdc-5b3c-43eb-afb1-bb765bea93cb",
+        "text" : "Sicht der Innovation",
+        "_id" : 10506655972878,
+        "_revision" : 8,
+        "_modified" : 1528917561245
+      }
+    }, {
+      "key" : 10506655972879,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "c848ebc5-bba5-46ab-a6f4-a4a0b554a4d7",
+        "text" : "Sicht der Kunstkritik\n",
+        "_id" : 10506655972879,
+        "_revision" : 8,
+        "_modified" : 1528917561246
+      }
+    }, {
+      "key" : 10506655972880,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "d7fa6eb8-2a3d-4c8e-a540-5c11f7b7f6db",
+        "text" : "Performance als Profiliereinrichtung\nRevolutionäre Performanceansätze",
+        "_id" : 10506655972880,
+        "_revision" : 8,
+        "_modified" : 1528917561246
+      }
+    }, {
+      "key" : 10506655972881,
+      "value" : {
+        "type" : "theory",
+        "id" : "789591cf-f385-43c5-b6d8-d52d22806332",
+        "text" : "performance theory\n",
+        "_id" : 10506655972881,
+        "_revision" : 8,
+        "_modified" : 1528917561246
+      }
+    } ]
+  }, {
+    "name" : "5",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972882,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "b14d9b54-43dd-476f-8620-2470d0256b41",
+        "text" : "Transportsicht\n„Auflösung des Werks im Akt der\n Präsentation“",
+        "_id" : 10506655972882,
+        "_revision" : 8,
+        "_modified" : 1528917561249
+      }
+    }, {
+      "key" : 10506655972883,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "bad85945-ede9-4e39-9541-f87aaccabe29",
+        "text" : "Vermittlungssicht\nSicht der Vermittler",
+        "_id" : 10506655972883,
+        "_revision" : 8,
+        "_modified" : 1528917561250
+      }
+    }, {
+      "key" : 10506655972884,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "e7ea2457-0a05-4a93-b2d7-e498043b4371",
+        "text" : "Performance als Medium der \nKunstvermittlung",
+        "_id" : 10506655972884,
+        "_revision" : 8,
+        "_modified" : 1528917561250
+      }
+    }, {
+      "key" : 10506655972885,
+      "value" : {
+        "type" : "theory",
+        "id" : "d659cafb-6016-47c6-a84c-40e6a597de4d",
+        "text" : "Kommunikationstheorie\nSpielregeln der Kunst\n",
+        "_id" : 10506655972885,
+        "_revision" : 8,
+        "_modified" : 1528917561250
+      }
+    } ]
+  }, {
+    "name" : "6",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972886,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "802ebd28-fa53-4c27-95cc-911d3b2e5130",
+        "text" : "Subversionssicht\n     Medienkritische Sicht\n„Underground City Utopie“\n",
+        "_id" : 10506655972886,
+        "_revision" : 8,
+        "_modified" : 1528917561252
+      }
+    }, {
+      "key" : 10506655972887,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "d5fe1ee0-cb86-413b-859d-f8c057263759",
+        "text" : "Sicht der Medien\n(intermediale Ansätze)\n„Oral, multimedial“ (1)",
+        "_id" : 10506655972887,
+        "_revision" : 8,
+        "_modified" : 1528917561253
+      }
+    }, {
+      "key" : 10506655972888,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "edf651bb-8b58-414a-92a7-c3f4b9e78d98",
+        "text" : "Performance als Kommunikationsguerilla\nKommuikationskonzepte der Performance\n„it´s all about communication“",
+        "_id" : 10506655972888,
+        "_revision" : 8,
+        "_modified" : 1528917561253
+      }
+    }, {
+      "key" : 10506655972889,
+      "value" : {
+        "type" : "theory",
+        "id" : "bf23e9be-15ef-4eca-acf4-5246095004fc",
+        "text" : "Medientheorie\nMedienwissenschaften\nKommunikationstheorie\nInformationstheorie",
+        "_id" : 10506655972889,
+        "_revision" : 8,
+        "_modified" : 1528917561254
+      }
+    } ]
+  }, {
+    "name" : "7",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972890,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "90356299-539e-436a-ba1b-9d3663485e8e",
+        "text" : "Psychoanalytische Sicht",
+        "_id" : 10506655972890,
+        "_revision" : 8,
+        "_modified" : 1528917561255
+      }
+    }, {
+      "key" : 10506655972891,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "b55c5fc2-4283-48b8-adca-a2128b8286f1",
+        "text" : "Körpersicht\nGustative Sicht (Geschmack; \neinverleibend)",
+        "_id" : 10506655972891,
+        "_revision" : 8,
+        "_modified" : 1528917561256
+      }
+    }, {
+      "key" : 10506655972892,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "339625fb-66f0-4efe-8247-b3549ac517fd",
+        "text" : "Performance als Leistung",
+        "_id" : 10506655972892,
+        "_revision" : 8,
+        "_modified" : 1528917561256
+      }
+    }, {
+      "key" : 10506655972893,
+      "value" : {
+        "type" : "theory",
+        "id" : "0b94eedf-e617-4701-8573-8e983167d291",
+        "text" : "Psychoanalyse / \nqueer theory / gender studies / \nbody theory / Körperphilosophie / \nKörpersoziologie / Tanztheorie / \nEkeltheorie / \nPhänomenologie der Wahrnehmung",
+        "_id" : 10506655972893,
+        "_revision" : 8,
+        "_modified" : 1528917561257
+      }
+    } ]
+  }, {
+    "name" : "8",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972894,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "d6ede75a-2daa-401c-a91a-83ee84981b6d",
+        "text" : " Identitätssicht",
+        "_id" : 10506655972894,
+        "_revision" : 8,
+        "_modified" : 1528917561258
+      }
+    }, {
+      "key" : 10506655972895,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "01ef1037-2f56-4b6e-ba7d-32f04f29972c",
+        "text" : "Alltagssicht\n„Lebenskunstwerk“\n„Life ist art enough“\n“Kunst als Lebensform”",
+        "_id" : 10506655972895,
+        "_revision" : 8,
+        "_modified" : 1528917561259
+      }
+    }, {
+      "key" : 10506655972896,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "86325d16-5a82-4120-902f-e1c12fbe2d8a",
+        "text" : "Performance als Praxis der Artikulation von Identität\nPerformance als Leben  \nPerformance als Aufenthaltsort\nPerformance als „Übersetzung“",
+        "_id" : 10506655972896,
+        "_revision" : 8,
+        "_modified" : 1528917561259
+      }
+    }, {
+      "key" : 10506655972897,
+      "value" : {
+        "type" : "theory",
+        "id" : "5401d49c-b178-4ba2-a7a3-9751deb2839f",
+        "text" : "Soziologie (Bourdieu)\ncultural studies\nLebensphilosophie\nSpielregeln der Kunst",
+        "_id" : 10506655972897,
+        "_revision" : 8,
+        "_modified" : 1528917561260
+      }
+    } ]
+  }, {
+    "name" : "9",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972898,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "68ce88a6-7468-42e3-8c97-2d285f2e460c",
+        "text" : "Emotionale Sicht\n„Emotions“",
+        "_id" : 10506655972898,
+        "_revision" : 8,
+        "_modified" : 1528917561261
+      }
+    }, {
+      "key" : 10506655972899,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "fdf2f870-1291-4ab3-9741-d97157600a36",
+        "text" : "Rezipientensicht\nTaktile Sicht\n„sympathische Vibrationen“",
+        "_id" : 10506655972899,
+        "_revision" : 8,
+        "_modified" : 1528917561262
+      }
+    }, {
+      "key" : 10506655972900,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "6fca950a-1338-4704-93b2-94b5d53285de",
+        "text" : "Performance als Handlung\nPerformance = Die Kunst des Handelns\n",
+        "_id" : 10506655972900,
+        "_revision" : 8,
+        "_modified" : 1528917561262
+      }
+    }, {
+      "key" : 10506655972901,
+      "value" : {
+        "type" : "theory",
+        "id" : "ffe85098-39b4-47f4-b089-beca69bfc2fd",
+        "text" : "Manifest des Taktilismus\nExistentialismus (Primat des Handelns)",
+        "_id" : 10506655972901,
+        "_revision" : 8,
+        "_modified" : 1528917561262
+      }
+    } ]
+  }, {
+    "name" : "20",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972942,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "63210805-ce17-414e-b33c-c58ad807af79",
+        "text" : "Ökonomische Sicht\n     Produktsicht",
+        "_id" : 10506655972942,
+        "_revision" : 8,
+        "_modified" : 1528917561291
+      }
+    }, {
+      "key" : 10506655972943,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "e3d9c7be-bccc-49af-92e5-9c09c2fd9e29",
+        "text" : "Finanzierungssicht\nKostensicht\nSponsorensicht",
+        "_id" : 10506655972943,
+        "_revision" : 8,
+        "_modified" : 1528917561292
+      }
+    }, {
+      "key" : 10506655972944,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "e6ae25ae-2510-4be4-bfdd-1386912bc584",
+        "text" : "Modeschau als Performance (u.u.) (@HOME)\nPerformance als Show\nPerformance als Ereignis",
+        "_id" : 10506655972944,
+        "_revision" : 8,
+        "_modified" : 1528917561292
+      }
+    }, {
+      "key" : 10506655972945,
+      "value" : {
+        "type" : "theory",
+        "id" : "2075e1ff-9a02-4911-8ed3-861401a41458",
+        "text" : "Spielregeln der Kunst",
+        "_id" : 10506655972945,
+        "_revision" : 8,
+        "_modified" : 1528917561292
+      }
+    } ]
+  }, {
+    "name" : "21",
+    "indices" : [ ],
+    "data" : [ {
+      "key" : 10506655972946,
+      "value" : {
+        "type" : "performanceAs",
+        "id" : "2cd53990-a43a-4900-a3b8-9ab2fd38b80c",
+        "text" : "Machttheoretische Sicht\n„Ereignen zw. Herrschaft u. Begegnen-lassen“",
+        "_id" : 10506655972946,
+        "_revision" : 8,
+        "_modified" : 1528917561294
+      }
+    }, {
+      "key" : 10506655972947,
+      "value" : {
+        "type" : "nnViewOne",
+        "id" : "01415b32-593c-411f-a26b-8070eb94ff1b",
+        "text" : "Sicht der organisierenden Institution\n",
+        "_id" : 10506655972947,
+        "_revision" : 8,
+        "_modified" : 1528917561294
+      }
+    }, {
+      "key" : 10506655972948,
+      "value" : {
+        "type" : "nnViewTwo",
+        "id" : "103bb65e-2762-45b8-9a36-3d24ac28b397",
+        "text" : "Die permanente Performance",
+        "_id" : 10506655972948,
+        "_revision" : 8,
+        "_modified" : 1528917561295
+      }
+    }, {
+      "key" : 10506655972949,
+      "value" : {
+        "type" : "theory",
+        "id" : "9b10ba1e-814c-49e6-9b23-efc25eaa30f4",
+        "text" : "Machttheorien\nSpielregeln der Kunst\n",
+        "_id" : 10506655972949,
+        "_revision" : 8,
+        "_modified" : 1528917561295
+      }
+    } ]
+  } ],
+  "repositories" : [ ]
+}
