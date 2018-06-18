@@ -18,6 +18,7 @@ import java.io.Writer
 
 object LocalTranslationRepository {
 
+    val classLoader = ClassLoader.getSystemClassLoader()
 
     fun createNewDBForUser(user: User) {
 

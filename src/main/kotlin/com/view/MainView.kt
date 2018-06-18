@@ -15,20 +15,9 @@ class MainView : View ("Main") {
         loginView.close()
     }
 
-
     override val root = anchorpane {
 
         setPrefSize(900.0,700.0)
-
-        menubar {
-            menu("Nota") {
-                item("add") {
-                    action {
-                        find(NoteView::class).openWindow()
-                    }
-                }
-            }
-        }
 
         pane {
 
@@ -39,7 +28,7 @@ class MainView : View ("Main") {
 
             }
 
-            hbox {
+            hbox(10) {
 
                 runAsync {
                     return@runAsync authController.usersMapList
@@ -47,12 +36,12 @@ class MainView : View ("Main") {
 
                     children.bind(it.values.toMutableList().observable()) {
                         button(it.userName) {
+                            setPrefSize(200.0, 200.0)
                             action {
                                 find<TranslatorView>(mapOf(TranslatorView::user to it)).openWindow()
                             }
                         }
                     }
-
                 }
             }
         }

@@ -22,12 +22,19 @@ object LocalNoteRepository {
 
     }
 
-    fun saveNoteToLocalDB(note: Note) {
+    fun createNoteInLocalDB(note: Note) {
 
         val noteCollection = db.getCollection(note.dbReferenceID)
         val document = createDocumentFromNote(note)
         noteCollection.insert(document)
 
+    }
+
+    fun saveNote(note: Note) {
+        val noteCollection = db.getCollection(note.dbReferenceID)
+        val document = createDocumentFromNote(note)
+        noteCollection.update("thisNoteID" eq note.thisNoteID, document)
+        println("saved $document")
     }
 
     fun loadNotesForDB(user: User?, dbName: String? = null) : ObservableList<Note>? {

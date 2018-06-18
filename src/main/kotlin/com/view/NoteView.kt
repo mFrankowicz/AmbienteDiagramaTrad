@@ -36,7 +36,7 @@ class NoteView : Fragment() {
                     val otherNoteID = ""
                     val text = ""
                     val note = Note(author, noteID, dbReferenceID, sightReference, otherNoteID, text)
-                    LocalNoteRepository.saveNoteToLocalDB(note)
+                    LocalNoteRepository.createNoteInLocalDB(note)
                 }
             }
 
@@ -52,7 +52,7 @@ class NoteView : Fragment() {
                 bottomAnchor = 0
             }
 
-            setPrefSize(450.0,600.0)
+            setPrefSize(500.0,600.0)
 
             vbox(5) {
 
@@ -71,24 +71,33 @@ class NoteView : Fragment() {
 
                             noteView = anchorpane {
 
-                                setPrefSize(400.0, 350.0)
+                                setPrefSize(500.0, 350.0)
+
+                                text("Author : ${LocalAuthRepository.findById(note.authorID)?.userName
+                                        ?: "not"} | da vista: ${note.sightReference + 1}") {
+
+                                    anchorpaneConstraints {
+                                        leftAnchor = 3
+                                        rightAnchor = 30
+                                        topAnchor = 5
+                                    }
+
+                                }
 
                                 webview {
 
                                     anchorpaneConstraints {
                                         leftAnchor = 3
                                         rightAnchor = 3
-                                        topAnchor = 3
+                                        topAnchor = 30
                                         bottomAnchor = 40
                                     }
 
-                                    this.engine.loadContent("-> n.t : ${LocalAuthRepository.findById(note.authorID)?.userName
-                                            ?: "not"} \n \n Vista: ${note.sightReference + 1} \n \n ${text.value}")
+                                    this.engine.loadContent("${text.value}")
 
                                     text.onChange {
                                         println(it)
-                                        this.engine.loadContent("-> n.t : ${LocalAuthRepository.findById(note.authorID)?.userName
-                                                ?: "not"} \n \n Vista: ${note.sightReference + 1} \n \n ${text.value}")
+                                        this.engine.loadContent("${text.value}")
                                     }
 
                                 }
@@ -116,7 +125,7 @@ class NoteView : Fragment() {
 
                             editNoteView = anchorpane {
 
-                                setPrefSize(400.0, 350.0)
+                                setPrefSize(500.0, 350.0)
 
                                 htmleditor {
 
@@ -144,6 +153,7 @@ class NoteView : Fragment() {
 
                                     button("s") {
                                         action {
+                                            LocalNoteRepository.saveNote(note)
                                             this@anchorpane.replaceWith(noteView,
                                                     ViewTransition.Slide(0.3.seconds,
                                                             tornadofx.ViewTransition.Direction.RIGHT))

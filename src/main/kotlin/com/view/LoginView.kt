@@ -52,6 +52,12 @@ class LoginView : View("Login") {
 
         }
 
+        button("Criar Conta") {
+            action {
+                find(CreateNewUserView::class).openWindow()
+            }
+        }
+
     }
 
 }
