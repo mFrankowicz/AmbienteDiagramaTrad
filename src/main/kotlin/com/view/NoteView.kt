@@ -84,7 +84,7 @@ class NoteView : Fragment() {
 
                                 }
 
-                                webview {
+                                textarea {
 
                                     anchorpaneConstraints {
                                         leftAnchor = 3
@@ -93,11 +93,11 @@ class NoteView : Fragment() {
                                         bottomAnchor = 40
                                     }
 
-                                    this.engine.loadContent("${text.value}")
+                                    this.text = ("${text.value}")
 
                                     text.onChange {
                                         println(it)
-                                        this.engine.loadContent("${text.value}")
+                                        this.text = ("${text.value}")
                                     }
 
                                 }
@@ -127,7 +127,7 @@ class NoteView : Fragment() {
 
                                 setPrefSize(500.0, 350.0)
 
-                                htmleditor {
+                                textarea {
 
                                     anchorpaneConstraints {
                                         leftAnchor = 3
@@ -136,10 +136,10 @@ class NoteView : Fragment() {
                                         bottomAnchor = 40
                                     }
 
-                                    htmlText = note.text
+                                    this.text = note.text
 
                                     setOnKeyPressed {
-                                        text.bindBidirectional(this@htmleditor.htmlText.toProperty())
+                                        text.bindBidirectional(this@textarea.textProperty())
                                     }
 
                                 }
